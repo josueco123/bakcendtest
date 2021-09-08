@@ -19,7 +19,7 @@
                   :href="route('dashboard')"
                   :active="route().current('dashboard')"
                 >
-                  Tareas
+                  Crear Tarea
                 </BreezeNavLink>
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                   <BreezeDropdown align="left" width="48">
@@ -65,14 +65,17 @@
                     </template>
 
                     <template #content>
-                      <BreezeDropdownLink :href="route('logout')" as="button">
+                      <BreezeDropdownLink :href="route('showmytask')" as="button">
                         Mis tareas
                       </BreezeDropdownLink>
-                      <BreezeDropdownLink :href="route('logout')" as="button">
+                      <BreezeDropdownLink :href="route('finishedtasks')" as="button">
                         Tareas Finalizadas
                       </BreezeDropdownLink>
-                      <BreezeDropdownLink :href="route('logout')" as="button">
+                      <BreezeDropdownLink :href="route('pendingtasks')" as="button">
                         Tareas Pendientes
+                      </BreezeDropdownLink>
+                      <BreezeDropdownLink :href="route('duetasks')" as="button">
+                        Tareas Por Fecha
                       </BreezeDropdownLink>
                     </template>
                   </BreezeDropdown>
@@ -204,7 +207,39 @@
               :href="route('dashboard')"
               :active="route().current('dashboard')"
             >
-              Tareas
+              Crear Tarea
+            </BreezeResponsiveNavLink>
+          </div>
+          <div class="pt-2 pb-3 space-y-1">
+            <BreezeResponsiveNavLink
+              :href="route('showmytask')"
+              :active="route().current('showmytask')"
+            >
+             Mis Tareas
+            </BreezeResponsiveNavLink>
+          </div>
+          <div class="pt-2 pb-3 space-y-1">
+            <BreezeResponsiveNavLink
+              :href="route('finishedtasks')"
+              :active="route().current('finishedtasks')"
+            >
+              Mis Tareas Finalizadas
+            </BreezeResponsiveNavLink>
+          </div>
+          <div class="pt-2 pb-3 space-y-1">
+            <BreezeResponsiveNavLink
+              :href="route('pendingtasks')"
+              :active="route().current('pendingtasks')"
+            >
+              Mis Tareas Pendientes
+            </BreezeResponsiveNavLink>
+          </div>
+          <div class="pt-2 pb-3 space-y-1">
+            <BreezeResponsiveNavLink
+              :href="route('duetasks')"
+              :active="route().current('duetasks')"
+            >
+              Mis Tareas Por Fecha
             </BreezeResponsiveNavLink>
           </div>
 
