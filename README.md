@@ -15,9 +15,9 @@ una vez descargado el proyecto se ingresa a la carpeta principal desde cualquier
 
 con el composer y el node ya instalados procedemos a instalar los paquetes necesarios para su funcionamiento con los siguientes comandos
 
-- composer install
+-composer install
 
-- npm install
+-npm install
 
 con estos comandos se tiene instalados todos los paquetes necesarios para ejecutar la app, luego se tiene que configurar la aplicación para esto se debe crear una base de datos e importar el archivo sql enviado, después debes modificar en el archivo .env se el usuario y clave de la base de datos.
 
